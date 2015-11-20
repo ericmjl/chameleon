@@ -1,5 +1,8 @@
 from itertools import product
 from random import shuffle
+from collections import namedtuple
+
+Card = namedtuple('Card', ['suite', 'value'])
 
 class Deck(object):
     """
@@ -7,11 +10,11 @@ class Deck(object):
     """
     def __init__(self):
         super(Deck, self).__init__()
-        self.cards = self.initialize()
+        self.cards = self.populate()
 
-    def initialize(self):
+    def populate(self):
         """
-        Initializes the deck of cards, in order.
+        Populates the deck of cards, in order.
         """
         suites = ['spades', 'hearts', 'diamonds', 'clubs']
         values = range(1,14)
@@ -19,10 +22,11 @@ class Deck(object):
         cards = []
 
         for suite, value in product(suites, values):
-            cards.append((suite, value))
+            
+            cards.append(Card(suite, value))
         
-        cards.append(('red', 'joker'))
-        cards.append(('black', 'joker'))
+        cards.append(Card('red', 'joker'))
+        cards.append(Card('black', 'joker'))
 
         return cards
 
@@ -48,4 +52,3 @@ class Deck(object):
 
         return bool(self.cards)
 
-    
