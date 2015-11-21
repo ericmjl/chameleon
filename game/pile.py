@@ -21,7 +21,7 @@ class Pile(object):
             self.current_value = card.value
 
         else:
-            assert new_suite != None
+            assert new_suite != None, print('You must specify a new suite.')
             assert new_suite in ['hearts', 'spades', 'diamonds', 'clubs']
 
             self.current_suite = new_suite

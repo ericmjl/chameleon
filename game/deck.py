@@ -36,7 +36,7 @@ class Deck(object):
         """
         shuffle(self.cards)
 
-    def deal(self):
+    def deal(self, player):
         """
         Deals a card from the top of the deck, and removes it from the deck.
         """
@@ -52,3 +52,4 @@ class Deck(object):
 
         return bool(self.cards)
 
+    
