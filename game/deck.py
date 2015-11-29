@@ -25,8 +25,8 @@ class Deck(object):
             
             cards.append(Card(suite, value))
         
-        cards.append(Card('red', 'joker'))
-        cards.append(Card('black', 'joker'))
+        cards.append(Card('red', 14))
+        cards.append(Card('black', 14))
 
         return cards
 
@@ -36,7 +36,7 @@ class Deck(object):
         """
         shuffle(self.cards)
 
-    def deal(self, player):
+    def deal(self):
         """
         Deals a card from the top of the deck, and removes it from the deck.
         """
