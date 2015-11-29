@@ -5,6 +5,9 @@ A simulation of a card game my wife taught me.
 
 - [ ] check for bugs in the game.
 - [ ] write tests for the game progression. 
+- [ ] implement the deterministic way of choosing cards.
+- [ ] implement strategic subclass of the Player class.
+- [ ] implement a genetic algorithm for choosing strategies?
 
 # Rules
 
