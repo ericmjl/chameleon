@@ -1,6 +1,13 @@
 # chameleon
 A simulation of a card game my wife taught me.
 
+# Todo List
+
+- [ ] check for bugs in the game.
+- [ ] write tests for the game progression. 
+
+# Rules
+
 ## Game initialize
 
 1. Any number of players can play, but should at least be 2.
